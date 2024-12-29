@@ -1,8 +1,8 @@
-import ProjectCard from "../commons/project-card";
-import TotalVisits from "../commons/total-visits";
-import UserCard from "../commons/user-card";
-import Button from "../ui/button";
-import TextInput from "../ui/text-input";
+import ProjectCard from '../commons/project-card'
+import TotalVisits from '../commons/total-visits'
+import UserCard from '../commons/user-card'
+import Button from '../ui/button'
+import TextInput from '../ui/text-input'
 
 export default function Hero() {
   return (
@@ -38,5 +38,5 @@ export default function Hero() {
         </div>
       </div>
     </div>
-  );
+  )
 }

@@ -1,15 +1,15 @@
-import ProjectCard from "@/app/components/commons/project-card";
-import TotalVisits from "@/app/components/commons/total-visits";
-import UserCard from "@/app/components/commons/user-card";
-import { Plus } from "lucide-react";
-import Link from "next/link";
+import ProjectCard from '@/app/components/commons/project-card'
+import TotalVisits from '@/app/components/commons/total-visits'
+import UserCard from '@/app/components/commons/user-card'
+import { Plus } from 'lucide-react'
+import Link from 'next/link'
 
 export default async function ProfilePage({
   params,
 }: {
-  params: { profileId: string };
+  params: { profileId: string }
 }) {
-  const { profileId } = await params;
+  const { profileId } = await params
 
   return (
     <div className="relative h-screen flex p-20 overflow-hidden">
@@ -41,5 +41,5 @@ export default async function ProfilePage({
         <TotalVisits />
       </div>
     </div>
-  );
+  )
 }

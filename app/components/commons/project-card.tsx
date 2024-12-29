@@ -20,5 +20,5 @@ export default function ProjectCard() {
         </div>
       </div>
     </div>
-  );
+  )
 }

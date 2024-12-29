@@ -1,4 +1,4 @@
-import Button from "../ui/button";
+import Button from '../ui/button'
 
 export default function Header() {
   return (
@@ -12,5 +12,5 @@ export default function Header() {
         <Button>Sair</Button>
       </div>
     </div>
-  );
+  )
 }

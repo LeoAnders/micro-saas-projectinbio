@@ -1,5 +1,5 @@
-import Header from "@/app/components/landing-page/header";
-import Button from "@/app/components/ui/button";
+import Header from '@/app/components/landing-page/header'
+import Button from '@/app/components/ui/button'
 export default async function UpgradePage() {
   return (
     <div className="h-screen flex flex-col items-center justify-center gap-4">
@@ -10,5 +10,5 @@ export default async function UpgradePage() {
         <Button>R$ 99,90 Vitalício</Button>
       </div>
     </div>
-  );
+  )
 }

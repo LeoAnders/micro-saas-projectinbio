@@ -1,5 +1,5 @@
-import { TRIAL_DAYS } from "@/app/lib/utils";
-import Button from "../ui/button";
+import { TRIAL_DAYS } from '@/app/lib/utils'
+import Button from '../ui/button'
 
 export default function Pricing() {
   return (
@@ -11,7 +11,7 @@ export default function Pricing() {
         <p className="text-content-body text-xl text-center">
           Junte-se à comunidade de criadores profissionais que já estão elevando
           sua <br />
-          presença online. Teste gratuitamente por{" "}
+          presença online. Teste gratuitamente por{' '}
           <strong className="text-accent-pink">{TRIAL_DAYS} dias</strong>, sem
           compromisso!
         </p>
@@ -49,5 +49,5 @@ export default function Pricing() {
         </div>
       </div>
     </div>
-  );
+  )
 }

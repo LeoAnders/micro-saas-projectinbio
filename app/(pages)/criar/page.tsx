@@ -1,7 +1,7 @@
-import Header from "@/app/components/landing-page/header";
-import Button from "@/app/components/ui/button";
-import TextInput from "@/app/components/ui/text-input";
-import { Rocket } from "lucide-react";
+import Header from '@/app/components/landing-page/header'
+import Button from '@/app/components/ui/button'
+import TextInput from '@/app/components/ui/text-input'
+import { Rocket } from 'lucide-react'
 export default function CriarPage() {
   return (
     <div>
@@ -21,5 +21,5 @@ export default function CriarPage() {
         </div>
       </div>
     </div>
-  );
+  )
 }
