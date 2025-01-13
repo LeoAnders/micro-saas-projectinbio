@@ -1,6 +1,6 @@
 import ProjectCard from '@/app/components/commons/project-card'
 import TotalVisits from '@/app/components/commons/total-visits'
-import UserCard from '@/app/components/commons/user-card'
+import UserCard from '@/app/components/commons/user-card/user-card'
 import { auth } from '@/app/lib/auth'
 import {
   getProfileData,

@@ -12,6 +12,10 @@ export default function ProjectCard({
   isOwner: boolean
   img: string
 }) {
+  if (!project || !project.projectUrl) {
+    return null
+  }
+
   const projectUrl = project.projectUrl
   const formattedUrl = projectUrl.startsWith('http')
     ? projectUrl
