@@ -18,7 +18,7 @@ export default async function ProfilePage({
 }) {
   const { profileId } = await params
 
-  const profileData = getProfileData(profileId)
+  const profileData = await getProfileData(profileId)
 
   if (!profileData) return notFound()
 
@@ -26,7 +26,7 @@ export default async function ProfilePage({
 
   const session = await auth()
 
-  const isOwner = (await profileData).userId === session?.user?.id
+  const isOwner = profileData.userId === session?.user?.id
 
   // TODO adicionar page view
 
@@ -43,7 +43,7 @@ export default async function ProfilePage({
         </Link>
       </div>
       <div className="w-1/2 flex justify-center h-min">
-        <UserCard />
+        <UserCard profileData={profileData} />
       </div>
       <div className="w-full flex justify-center content-start gap-4 flex-wrap overflow-y-auto">
         {projects.map(async (project) => (
