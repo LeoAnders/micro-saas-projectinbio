@@ -1,5 +1,6 @@
 'use server'
 
+import { Link } from '../actions/add-custom-links'
 import { db } from '../lib/firebase'
 
 export type ProfileData = {
@@ -12,6 +13,9 @@ export type ProfileData = {
     github?: string
     linkedin?: string
   }
+  link1?: Link
+  link2?: Link
+  link3?: Link
   updatedAt?: number
 }
 
