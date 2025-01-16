@@ -22,15 +22,17 @@ export default async function ProfilePage({
 
   if (!profileData) return notFound()
 
+  // TODO: get projects
+
   const projects = await getProfileProjects(profileId)
 
   const session = await auth()
 
   const isOwner = profileData.userId === session?.user?.id
 
-  // TODO adicionar page view
+  // TODO: Adicionar page view
 
-  // TODO: Se o usuário nao estiver mais no trial, nao deixar ver o projeto, direcionar para o upgrade
+  // Se o usuario não estiver mais no trial, nao deixar ver o projeto. Redirecionar para upgrade
 
   return (
     <div className="relative h-screen flex p-20 overflow-hidden">
@@ -43,7 +45,7 @@ export default async function ProfilePage({
         </Link>
       </div>
       <div className="w-1/2 flex justify-center h-min">
-        <UserCard profileData={profileData} />
+        <UserCard profileData={profileData} isOwner={isOwner} />
       </div>
       <div className="w-full flex justify-center content-start gap-4 flex-wrap overflow-y-auto">
         {projects.map(async (project) => (

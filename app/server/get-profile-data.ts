@@ -5,13 +5,16 @@ import { db } from '../lib/firebase'
 
 export type ProfileData = {
   userId: string
+  name: string
+  description: string
+  imagePath: string
   totalVisits: number
   createdAt: number
   socialMedias?: {
-    instagram?: string
-    twitter?: string
-    github?: string
-    linkedin?: string
+    github: string
+    instagram: string
+    linkedin: string
+    twitter: string
   }
   link1?: Link
   link2?: Link
@@ -42,5 +45,6 @@ export async function getProfileProjects(profileId: string) {
     .doc(profileId)
     .collection('projects')
     .get()
+
   return snapshot.docs.map((doc) => doc.data() as ProjectData)
 }

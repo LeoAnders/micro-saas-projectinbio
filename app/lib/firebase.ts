@@ -34,8 +34,8 @@ export async function getDownloadURLFromPath(path?: string) {
 
   const [url] = await file.getSignedUrl({
     action: 'read',
-    expires: '03-09-2491',
+    expires: '03-01-2500', // Não deixa expirar
   })
-
+  console.log(url)
   return url
 }
