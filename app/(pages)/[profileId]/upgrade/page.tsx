@@ -1,5 +1,5 @@
 import Header from '@/app/components/landing-page/header'
-import PlanButtons from './plan.buttons'
+import PlanButtons from './plan-buttons'
 
 export default async function UpgradePage() {
   return (

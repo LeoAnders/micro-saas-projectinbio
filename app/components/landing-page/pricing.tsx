@@ -1,4 +1,4 @@
-import { TRIAL_DAYS } from '@/app/lib/utils'
+import { TRIAL_DAYS } from '@/app/lib/config'
 import Button from '../ui/button'
 
 export default function Pricing() {
