@@ -93,7 +93,7 @@ export default async function UserCard({
       </div>
       <div className="flex flex-col gap-3 w-full min-h-[172px]">
         <div className="w-full flex flex-col items-center gap-3">
-          {profileData?.link1 && (
+          {profileData?.link1?.url && profileData?.link1?.title && (
             <Link
               href={formatUrl(profileData?.link1.url)}
               target="_blank"
@@ -102,7 +102,7 @@ export default async function UserCard({
               <Button className="w-full">{profileData.link1.title}</Button>
             </Link>
           )}
-          {profileData?.link2 && (
+          {profileData?.link2?.url && profileData?.link2?.title && (
             <Link
               href={formatUrl(profileData?.link2.url)}
               target="_blank"
@@ -111,7 +111,7 @@ export default async function UserCard({
               <Button className="w-full">{profileData.link2.title}</Button>
             </Link>
           )}
-          {profileData?.link3 && (
+          {profileData?.link3?.url && profileData?.link3?.title && (
             <Link
               href={formatUrl(profileData?.link3.url)}
               target="_blank"
