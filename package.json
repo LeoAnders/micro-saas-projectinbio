@@ -10,7 +10,7 @@
     "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
   },
   "dependencies": {
-    "@auth/firebase-adapter": "^2.7.4",
+    "@auth/firebase-adapter": "^2.7.2",
     "@stripe/stripe-js": "^5.5.0",
     "browser-image-compression": "^2.0.2",
     "clsx": "^2.1.1",
